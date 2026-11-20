@@ -1,0 +1,136 @@
+.pose-prompt {
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid #1e1e2a;
+}
+
+.pose-prompt-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.pose-prompt-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #807060;
+}
+
+.pose-prompt-model {
+  font-size: 9px;
+  color: #404058;
+  letter-spacing: 0.04em;
+}
+
+.pose-prompt-textarea {
+  width: 100%;
+  background: #0e0e16;
+  border: 1px solid #252534;
+  color: #c8c0b4;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 11px;
+  font-family: inherit;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.pose-prompt-textarea:focus { border-color: #C4A060; }
+.pose-prompt-textarea::placeholder { color: #3a3a50; }
+.pose-prompt-textarea:disabled { opacity: 0.5; }
+
+.pose-prompt-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.pose-prompt-hint {
+  font-size: 9px;
+  color: #363648;
+  letter-spacing: 0.04em;
+}
+
+.btn-generate {
+  background: #1e1a0e;
+  border: 1px solid #C4A060;
+  color: #C4A060;
+  border-radius: 5px;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  transition: background 0.15s, opacity 0.15s;
+}
+.btn-generate:hover:not(:disabled) { background: #2e2818; }
+.btn-generate:disabled { opacity: 0.4; cursor: default; }
+.btn-generate.loading {
+  opacity: 0.7;
+  cursor: default;
+  letter-spacing: 0.12em;
+}
+
+.pose-result {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 6px 8px;
+  background: #0a160a;
+  border: 1px solid #1a3020;
+  border-radius: 4px;
+}
+
+.pose-result-icon {
+  font-size: 10px;
+  color: #50a060;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.pose-result-text {
+  font-size: 10px;
+  color: #70a880;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.pose-error {
+  margin-top: 8px;
+  padding: 6px 8px;
+  background: #160a0a;
+  border: 1px solid #3a1010;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #c05050;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.pose-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.pose-example-chip {
+  background: #111118;
+  border: 1px solid #222230;
+  color: #50506a;
+  border-radius: 3px;
+  padding: 3px 7px;
+  font-size: 9px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.1s, color 0.1s;
+}
+.pose-example-chip:hover {
+  border-color: #404060;
+  color: #8080a0;
+}

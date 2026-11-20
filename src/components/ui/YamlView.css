@@ -1,0 +1,53 @@
+.yaml-view {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.yaml-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-bottom: 1px solid #1e1e2a;
+  flex-shrink: 0;
+}
+
+.yaml-info {
+  font-size: 10px;
+  color: #505068;
+  letter-spacing: 0.04em;
+}
+
+.yaml-copy-btn {
+  background: none;
+  border: 1px solid #2a2a38;
+  color: #7070a0;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.1s, color 0.1s;
+}
+.yaml-copy-btn:hover { border-color: #C4A060; color: #C4A060; }
+
+.yaml-pre {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin: 0;
+  padding: 12px 14px;
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: #9090a8;
+  white-space: pre;
+  tab-size: 2;
+}
+
+.yaml-pre::-webkit-scrollbar { width: 4px; height: 4px; }
+.yaml-pre::-webkit-scrollbar-track { background: transparent; }
+.yaml-pre::-webkit-scrollbar-thumb { background: #2a2a38; border-radius: 2px; }
